@@ -1,0 +1,1635 @@
+<html>
+	<head>		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="UTF-8">
+		<title>MA-RSA | มาอาสา.com</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style-content.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+		<!-- progress bar -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script>
+			$(function() {
+				$(".meter > span").each(function() {
+					$(this)
+						.data("origWidth", $(this).width())
+						.width(0)
+						.animate({
+							width: $(this).data("origWidth")
+						}, 1200);
+				});
+			});
+		</script><!-- end progress bar -->		
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtr3FT0uDFpjx-VisBICLWclTjETC6UTc"></script>
+		<script>
+		function initialize() {
+		  var mapProp = {
+		    center:new google.maps.LatLng(13.746058, 100.534909),
+		    zoom:5,
+		    mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+
+		<script>
+		function initialize() {
+		  var mapProp = {
+		    center:new google.maps.LatLng(13.747784, 100.510785),
+		    zoom:5,
+		    mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap2"), mapProp);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+
+		<script>
+		function initialize() {
+		  var mapProp = {
+		    center:new google.maps.LatLng(13.747784, 100.510785),
+		    zoom:5,
+		    mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap3"), mapProp);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+
+		<script>
+		function initialize() {
+		  var mapProp = {
+		    center:new google.maps.LatLng(13.750113, 100.509074),
+		    zoom:5,
+		    mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap4"), mapProp);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+
+		<script>
+		function initialize() {
+		  var mapProp = {
+		    center:new google.maps.LatLng(13.734086, 100.454168),
+		    zoom:5,
+		    mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap5"), mapProp);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+
+	</head>
+
+	<body>
+		<div class="header">
+			<video autoplay  id="bgvid" loop>
+			<source src="videos/video-header.mp4" type="video/mp4">
+			</video>
+
+			<div class="bg-header-mobile"></div>
+			<div class="logo">
+				<a href="index.php"><img src="images/logo.png"></a>
+			</div>
+
+				<div class="menu-nav-destop">
+					<ul>
+						<li><a href="index.php" class="text-menu-destop">หน้าแรก</a></li>
+						<li><a href="#" class="text-menu-destop">บริจาค</a></li>
+						<li><a href="#" class="text-menu-destop">โครงการ</a></li>
+						<li><a href="content.html" class="text-menu-destop active-menu-des">บอร์ด</a></li>
+						<li><a href="contact.html" class="text-menu-destop ">เกี่ยวกับเรา</a></li>
+						<li><a href="login.php" class="text-menu-destop">เข้าสู่ระบบ</a></li>
+					</ul>
+				</div>
+
+				<input class="burger-check" id="burger-check" type="checkbox">
+				<label for="burger-check" class="burger"></label>
+				<nav id="navigation1" class="navigation">
+					<ul>
+					    <li><a href="index.html" class="text-burger">หน้าแรก</a></li>
+					    <li><a href="#" class="text-burger">บริจาค</a></li>
+					    <li><a href="#" class="text-burger">โครงการ</a></li>
+					    <li><a href="content.html" class="text-burger active-menu">บอร์ด</a></li>
+					    <li><a href="contact.html" class="text-burger">เกี่ยวกับเรา</a></li>
+					    <li><a href="login.php" class="text-burger">เข้าสู่ระบบ</a></li>
+					</ul>
+				</nav>
+					
+				<div class="thumb-button">
+					<div class="circle-head">
+						<a href="login.php" class="icon-head">
+						<i class="fa fa-user"></i></a>
+					</div>
+					<div class="circle-head">
+						<a href="search.php" class="icon-head">
+						<i class="fa fa-search"></i></a>
+					</div>
+				</div>
+
+				<div class="select-menu-board">
+					<div class="create-menu-borad">
+						<div class="text-menu-board"><a href="#create-board">สร้างบอร์ดใหม่</a></div>
+					</div>
+					<div class="box-menu-board">
+						<div class="text-menu-board"><a href="#donate-money">ขอรับบริจาคเงิน</a></div>
+					</div>
+					<div class="box-menu-board">
+						<div class="text-menu-board"><a href="#blood">ขอรับบริจาคเลือด</a></div>
+					</div>
+					<div class="box-menu-board">
+						<div class="text-menu-board"><a href="#thing">ขอรับบริจาคสิ่งของ</a></div>
+					</div>
+					<div class="box-menu-board">
+						<div class="text-menu-board"><a href="#adopt">หาบ้าน</a></div>
+					</div>
+					<div class="box-menu-board">
+						<div class="text-menu-board"><a href="#think">แสดงความคิดเห็น</a></div>
+					</div>
+					<div class="box-menu-board">
+						<div class="text-menu-board"><a href="#food">ขอรับบริจาคอาหาร</a></div>
+					</div>
+				</div><!-- select-menu-board -->		
+		</div><!-- end header -->
+			
+		<div id="wrapper">
+			<div id="donate-money">
+				<div class="menu-header">				
+					<div class="menu-header-text">ขอรับบริจาคเงิน</div>
+				</div>
+
+				<div id="wrap-box-money1">
+					<div class="box-money-left">
+						<div class="money-pic"><img src="images/money-pic-1.png"></div>
+						<div class="money-button activebut">
+							<div class="text-money-button active-textbut"><a href="#">ข้อมูล</a></div>
+						</div>
+						<div class="money-button">
+							<div class="text-money-button"><a href="#">พูดคุย</a></div>
+						</div>
+						<div class="money-button-big">
+							<div class="text-money-button"><a href="#">บริจาค</a></div>
+						</div>
+						<div class="money-button-share">
+							<div class="text-money-button">
+								<a href="#"><i class="fa fa-share-alt"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="box-money-right">
+						<div class="box-money-thead">
+							<p>ด่วน! ขอรับบริจาคเงินเพื่อช่วยเหลือแมว</p>
+						</div>
+						<div class="box-money-text">
+							<p>ขอรับบริจาคเงินเพื่อช่วยเหลือแมว
+								ประสบอุบัติเหตุ โดนรถชนที่ถนน
+								บายพาส บริเวณหน้ามหาวิทยาลัย
+								ศิลปากร น้องแมวกระดูกบริเวณขา
+								หัก น้องแมวจึงต้องอยู่โรงพยาบาล
+								เพื่อให้คุณหมอดูแลอย่างใกล้ชิดจน
+								กว่ากระดูกจะเข้าที่มากกว่านี้ ตอนนี้
+								น้องแมวพักรักษาตัวอยู่ที่โรงพยาบาล
+								สัตว์หัวหิน รบกวนช่วยน้องแมวด้วยค่ะ</p>
+						</div>
+						<div class="text-icon-money">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-money">คนรักแมว</div>
+						<div class="text-icon-money">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-money">20/04/2559</div>
+					</div>
+				</div><!-- wrap-box-money1 -->
+
+				<div id="wrap-box-money2">
+					<div class="box-money-left">
+						<div class="money-pic"><img src="images/money-pic-2.png"></div>
+						<div class="money-button">
+							<div class="text-money-button"><a href="#">ข้อมูล</a></div>
+						</div>
+						<div class="money-button activebut">
+							<div class="text-money-button active-textbut"><a href="#">พูดคุย</a></div>
+						</div>
+						<div class="money-button-big">
+							<div class="text-money-button"><a href="#">บริจาค</a></div>
+						</div>
+						<div class="money-button-share">
+							<div class="text-money-button">
+								<a href="#"><i class="fa fa-share-alt"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="box-money-right">
+						<div class="box-money-talk">
+							<div class="text-talk-money">น้องแมวอาการดีขึ้นแล้วนะคะ</div>					
+							<div class="icon-talk-money">
+								<i class="fa fa-user"></i>
+							</div>
+							<div class="talk-money">แม่แมว</div>
+							<div class="icon-talk-money">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<div class="talk-money">19/04/2559</div>
+						</div><!-- box-money-talk1 -->
+						<div class="box-money-talk">
+							<div class="text-talk-money">น้องแมวเป็นอย่างไรบ้างครับ</div>
+							<div class="icon-talk-money">
+								<i class="fa fa-user"></i>
+							</div>							
+							<div class="talk-money">คนรักแมว</div>		
+							<div class="icon-talk-money">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<div class="talk-money">19/04/2559</div>
+						</div><!-- box-money-talk2 -->
+						<div class="box-money-talk">
+							<div class="text-talk-money">หายไวไวนะครับสู้ๆ</div>
+							<div class="icon-talk-money">
+								<i class="fa fa-user"></i>
+							</div>
+							<div class="talk-money">แมวน้อย</div>
+							<div class="icon-talk-money">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<div class="talk-money">19/04/2559</div>
+						</div><!-- box-money-talk3 -->
+						<div class="box-money-talk">
+							<div class="text-talk-money">แมวเราเคยมี เป็นแบบนี้เลยค่ะ</div>
+							<div class="icon-talk-money">
+								<i class="fa fa-user"></i>
+							</div>
+							<div class="talk-money">แมวไทย</div>	
+							<div class="icon-talk-money">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<div class="talk-money">19/04/2559</div>
+						</div><!-- box-money-talk4 -->
+						<div class="box-money-talk">
+							<div class="text-talk-money">น้องแมวหายแล้ว ขอบคุณค่ะ</div>
+							<div class="icon-talk-money">
+								<i class="fa fa-user"></i>
+							</div>
+							<div class="talk-money">แม่แมว</div>
+							<div class="icon-talk-money">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<div class="talk-money">25/04/2559</div>
+						</div><!-- box-money-talk5 -->
+						<input type="text" class="input-talk-money">
+						<div class="button-send-money">
+							<div class="text-send-money">ส่ง</div>
+						</div>
+					</div>
+				</div><!-- wrap-box-money2 -->
+
+				<div id="wrap-box-money3">
+					<div class="box-money-left">
+						<div class="money-pic"><img src="images/money-pic-3.png"></div>
+						<div class="money-button">
+							<div class="text-money-button"><a href="#">ข้อมูล</a></div>
+						</div>
+						<div class="money-button">
+							<div class="text-money-button"><a href="#">พูดคุย</a></div>
+						</div>
+						<div class="money-button-big activebut">
+							<div class="text-money-button active-textbut"><a href="#">บริจาค</a></div>
+						</div>
+						<div class="money-button-share">
+							<div class="text-money-button">
+								<a href="#"><i class="fa fa-share-alt"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="box-money-right">
+						<div class="box-bank-money">
+							<p>ชื่อบัญชี : ชุติภา รักแมว<br>
+								ธนาคาร : กรุงไทย<br>
+								สาขา : บางรัก<br>
+								เลขบัญชี : 9810083041</p>
+						</div>
+						<div class="button-bank-money">
+							<div class="text-button-money"><a href="#">เงินสด</a></div>
+						</div>
+						<div class="button-bank-money">
+							<div class="text-button-money"><a href="#">ผ่านบัตรเดบิต/เครดิต</a></div>
+						</div>
+					</div>
+				</div><!-- wrap-box-money3 -->
+
+				<div id="wrap-box-money4">
+					<div class="box-money-left">
+						<div class="money-pic"><img src="images/money-pic-4.png"></div>
+						<div class="money-button activebut">
+							<div class="text-money-button"><a href="#">ข้อมูล</a></div>
+						</div>
+						<div class="money-button">
+							<div class="text-money-button"><a href="#">พูดคุย</a></div>
+						</div>
+						<div class="money-button-big">
+							<div class="text-money-button"><a href="#">บริจาค</a></div>
+						</div>
+						<div class="money-button-share">
+							<div class="text-money-button">
+								<a href="#"><i class="fa fa-share-alt"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="box-money-right">
+						<div class="box-money-thead">
+							<p>ขอรับบริจาคเงินเพื่อช่วยเหลือแมวประสบอุบัติเหตุ</p>
+						</div>
+						<div class="box-money-text">
+							<p>ขอรับบริจาคเงินเพื่อช่วยเหลือแมวประสบ
+								อุบัติเหตุ โดนรถชนที่ถนนเจริญกรุง บริเวณ
+								หน้าเอเชียทีค เมื่อวาน เวลาประมาณ 6 โมง
+								รถที่ชน แล้วหนีไป ผมเป็นคนมาเจอแมวนอน
+								อยู่จึงรีบพามาหาหมอ ค่ารักษาพยาบาลค่อน
+								ข้างสูง เนื่องจากน้องแมวเจ็บหนักมาก จึง
+								ขอรับบริจาคเงินเพื่อช่ยเหลือน้องแมวครับ</p>
+						</div>
+						<div class="text-icon-money">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-money">คนช่วยแมว</div>
+						<div class="text-icon-money">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-money">19/04/2559</div>
+					</div>
+				</div><!-- wrap-box-money4 -->		
+
+				<div class="select-page select-padding">
+					<a href="#" class="icon-select-page">
+					<i class="fa fa-angle-double-left"></i></a>
+					<a href="#" class="select-page-number active-number">1</a>
+					<a href="#" class="select-page-number">2</a>
+					<a href="#" class="select-page-number">3</a>
+					<a href="#" class="select-page-number">4</a>
+					<a href="#" class="select-page-number">...</a>
+					<a href="#" class="icon-select-page">
+					<i class="fa fa-angle-double-right"></i></a>
+				</div>
+			</div><!-- donate-money -->
+
+			<div id="blood">
+				<div class="menu-header">				
+					<div class="menu-header-text">ขอรับบริจาคเลือด</div>
+				</div>
+
+				<div id="box-blood1">
+					<div class="button-share-blood">
+						<div class="icon-share-blood">
+							<a href="#"><i class="fa fa-share-alt"></i></a>
+						</div>
+					</div>
+					<div class="pic-blood"><img src="images/pic-blood-1.png"></div>
+					<div class="wrap-button-blood">
+						<div class="button-blood">
+							<div class="text-button-blood"><a href="#">ข้อมูล</a></div>
+						</div>
+						<div class="button-blood">
+							<div class="text-button-blood"><a href="#">แผนที่</a></div>
+						</div>
+						<div class="button-blood">
+							<div class="text-button-blood"><a href="#">พูดคุย</a></div>
+						</div>
+					</div>
+					<div class="box-detail-blood">
+						<div class="detail-map-blood">
+							<p>ที่อยู่  :  123 ถ.เจริญกรุง เขต บางรัก แขวง วัดพระยาไกร กรุงเทพ 10120</p>
+						</div>
+						<div class="wrap-map-blood">
+							<div id="googleMap"></div>
+						</div>
+					</div>					
+				</div><!-- box-blood1 -->
+
+				<div id="box-blood2">
+					<div class="button-share-blood">
+						<div class="icon-share-blood">
+							<a href="#"><i class="fa fa-share-alt"></i></a>
+						</div>
+					</div>
+					<div class="pic-blood"><img src="images/pic-blood-2.png"></div>
+					<div class="wrap-button-blood">
+						<div class="button-blood">
+							<div class="text-button-blood"><a href="#">ข้อมูล</a></div>
+						</div>
+						<div class="button-blood">
+							<div class="text-button-blood"><a href="#">แผนที่</a></div>
+						</div>
+						<div class="button-blood">
+							<div class="text-button-blood"><a href="#">พูดคุย</a></div>
+						</div>
+					</div>
+					<div class="box-detail-blood">
+						<div class="detail-head-blood">ชื่อ</div>
+						<div class="box-head-text">
+							<p>ด่วน! ต้องการเลือดกรุ๊ป A</p>
+						</div>
+						<div class="detail-head-blood">รายละเอียด</div>
+						<div class="box-detail-text">
+							<p>น้องแมวประสบอุบัติเหตุ โดนรถชนบริเวณขา
+								หลังเป็นแผลใหญ่เสียเลือดมาก จึงต้องการเลือด
+								กรุ๊ป A เป็นจำนวนมาก ติดต่อได้ที่ โรงพยาบาล
+								สัตว์เกษตร</p>
+						</div>
+						<div class="text-icon-blood">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-blood">คนรักแมว</div>
+						<div class="text-icon-blood">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-blood">20/04/2559</div>
+					</div>					
+				</div><!-- box-blood2 -->
+
+				<div id="box-blood3">
+					<div class="button-share-blood">
+						<div class="icon-share-blood">
+							<a href="#"><i class="fa fa-share-alt"></i></a>
+						</div>
+					</div>
+					<div class="pic-blood"><img src="images/pic-blood-2.png"></div>
+					<div class="wrap-button-blood">
+						<div class="button-blood">
+							<div class="text-button-blood"><a href="#">ข้อมูล</a></div>
+						</div>
+						<div class="button-blood">
+							<div class="text-button-blood"><a href="#">แผนที่</a></div>
+						</div>
+						<div class="button-blood">
+							<div class="text-button-blood"><a href="#">พูดคุย</a></div>
+						</div>
+					</div>
+					<div class="box-detail-blood">
+						<div class="box-talk-blood">
+							<div class="text-talk-blood">น้องแมวเป็นอย่างไรบ้างคะ</div>
+							<div class="icon-talk-blood">
+								<i class="fa fa-user"></i>
+							</div>
+							<div class="user-talk-blood">คนรักแมว</div>
+							<div class="icon-talk-blood">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<div class="user-talk-blood">20/04/2559 18:00</div>
+						</div>
+						<div class="box-talk-blood">
+							<div class="text-talk-blood">อาการดีขึ้นแล้วค่ะ แต่ยังต้องการเลือดอยู่นะคะ</div>
+							<div class="icon-talk-blood">
+								<i class="fa fa-user"></i>
+							</div>
+							<div class="user-talk-blood">แม่แมวโชคดี</div>
+							<div class="icon-talk-blood">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<div class="user-talk-blood">20/04/2559 19:00</div>
+						</div>	
+						<div class="box-talk-blood">
+							<div class="text-talk-blood">บริจาคเลือดได้ที่ไหนบ้าง ขอรายละเอียดด้วยครับ</div>
+							<div class="icon-talk-blood">
+								<i class="fa fa-user"></i>
+							</div>
+							<div class="user-talk-blood">พ่อแมวเปอร์เซีย</div>
+							<div class="icon-talk-blood">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<div class="user-talk-blood">20/04/2559 19:30</div>
+						</div>
+						<input type="text" class="input-talk-blood">
+						<div class="button-send-blood">
+							<div class="text-send-blood">ส่ง</div>
+						</div>					
+					</div>					
+				</div><!-- box-blood3 -->
+
+				<div id="box-blood4">
+					<div class="button-share-blood">
+						<div class="icon-share-blood">
+							<a href="#"><i class="fa fa-share-alt"></i></a>
+						</div>
+					</div>
+					<div class="pic-blood"><img src="images/pic-blood-2.png"></div>
+					<div class="wrap-button-blood">
+						<div class="button-blood">
+							<div class="text-button-blood"><a href="#">ข้อมูล</a></div>
+						</div>
+						<div class="button-blood">
+							<div class="text-button-blood"><a href="#">แผนที่</a></div>
+						</div>
+						<div class="button-blood">
+							<div class="text-button-blood"><a href="#">พูดคุย</a></div>
+						</div>
+					</div>
+					<div class="box-detail-blood">
+						<div class="detail-head-blood">ชื่อ</div>
+						<div class="box-head-text">
+							<p>ต้องการเลือดกรุ๊ป B จำนวนมาก</p>
+						</div>
+						<div class="detail-head-blood">รายละเอียด</div>
+						<div class="box-detail-text">
+							<p>ต้องการเลือดกรุ๊ป B เป็นจำนวนมาก เพื่อช่วย
+							เหลือแมวป่วยเป็นโรคมดลูกอักเสบ จึงต้องตัด
+							มดลูกทิ้ง ต้องการเลือดเพื่อสำรองในการผ่าตัด
+							ติดต่อได้ที่ 091-1111111</p>	
+						</div>
+						<div class="text-icon-blood">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-blood">แม่แมวน้อย</div>
+						<div class="text-icon-blood">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-blood">19/04/2559</div>
+					</div>					
+				</div><!-- box-blood4 -->
+
+				<div class="select-page select-padding">
+					<a href="#" class="icon-select-page">
+					<i class="fa fa-angle-double-left"></i></a>
+					<a href="#" class="select-page-number active-number">1</a>
+					<a href="#" class="select-page-number">2</a>
+					<a href="#" class="select-page-number">3</a>
+					<a href="#" class="select-page-number">4</a>
+					<a href="#" class="select-page-number">...</a>
+					<a href="#" class="icon-select-page">
+					<i class="fa fa-angle-double-right"></i></a>
+				</div>
+			</div><!-- blood -->
+
+			<div id="thing">
+				<div class="menu-header">				
+					<div class="menu-header-text">ขอรับบริจาคสิ่งของ</div>
+				</div>
+
+				<div id="wrap-box-thing1">					
+					<div class="box-thing">
+						<div class="pic-thing"><img src="images/thing-pic-1.png"></div>
+						<div class="detail-thing">
+							<p>ต้องการที่นอนจำนวนมาก<br>
+								จำนวน : 1,000 ชิ้น<br>
+								ต้องการที่นอนเผื่อช่วยเหลือแมวในช่วงฤดูหนาว</p>
+						</div>
+						<div class="wrap-map-thing">
+							<div id="googleMap2"></div>
+						</div>
+						<div class="text-icon-thing">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-thing">คนรักแมว</div>
+						<div class="text-icon-thing">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-thing">20/04/2559</div>
+					</div>
+					<div class="wrap-button-thing">
+						<div class="button-share-thing">
+							<div class="text-butt-thing">
+								<a href="#"><i class="fa fa-share-alt"></i></a>
+							</div>
+						</div>
+						<div class="button-donate-thing">
+							<div class="text-butt-thing"><a href="#">บริจาค</a></div>
+						</div>
+					</div>
+				</div><!-- wrap-box-thing1 -->
+
+				<div id="wrap-box-thing2">					
+					<div class="box-thing">
+						<div class="pic-thing"><img src="images/thing-pic-2.png"></div>
+						<div class="detail-thing">
+							<p>รับริจาคปลอกคอ<br>
+								จำนวน : 5000 ชิ้น<br>
+								ต้องการปลอกคอแมวจำนวนมากเพื่อใส่ให้แมวจรจัด</p>
+						</div>
+						<div class="wrap-map-thing">
+							<div id="googleMap3"></div>
+						</div>
+						<div class="text-icon-thing">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-thing">แม่แมวไทย</div>
+						<div class="text-icon-thing">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-thing">19/04/2559</div>
+					</div>
+					<div class="wrap-button-thing">
+						<div class="button-share-thing">
+							<div class="text-butt-thing">
+								<a href="#"><i class="fa fa-share-alt"></i></a>
+							</div>
+						</div>
+						<div class="button-donate-thing">
+							<div class="text-butt-thing"><a href="#">บริจาค</a></div>
+						</div>
+					</div>
+				</div><!-- wrap-box-thing2 -->
+
+				<div id="wrap-box-thing3">					
+					<div class="box-thing">
+						<div class="pic-thing"><img src="images/thing-pic-3.png"></div>
+						<div class="detail-thing">
+							<p>ขอรับบริจาคชามข้าวน้องแมว<br>
+								จำนวน : 1,000 ชิ้น<br>
+								เพื่อช่วยเหลือแมวจรจัด แมวตามวัดและมูลนิธิต่างๆ</p>
+						</div>
+						<div class="wrap-map-thing">
+							<div id="googleMap4"></div>
+						</div>
+						<div class="text-icon-thing">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-thing">แมวไทย</div>
+						<div class="text-icon-thing">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-thing">18/04/2559</div>
+					</div>
+					<div class="wrap-button-thing">
+						<div class="button-share-thing">
+							<div class="text-butt-thing">
+								<a href="#"><i class="fa fa-share-alt"></i></a>
+							</div>
+						</div>
+						<div class="button-donate-thing">
+							<div class="text-butt-thing"><a href="#">บริจาค</a></div>
+						</div>
+					</div>
+				</div><!-- wrap-box-thing3 -->
+
+				<div id="wrap-box-thing4">					
+					<div class="box-thing">
+						<div class="pic-thing"><img src="images/thing-pic-4.png"></div>
+						<div class="detail-thing">
+							<p>ขอกระบะทรายจำนวนมาก<br>
+								จำนวน : 2000 ชิ้น<br>
+								ต้องการห้องน้ำแมวจำนวนมากเพื่อช่วยเหลือแมวตามมูลนิธิ</p>
+						</div>
+						<div class="wrap-map-thing">
+							<div id="googleMap5"></div>
+						</div>
+						<div class="text-icon-thing">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-thing">แมวลายเสือ</div>
+						<div class="text-icon-thing">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-thing">18/04/2559</div>
+					</div>
+					<div class="wrap-button-thing">
+						<div class="button-share-thing">
+							<div class="text-butt-thing">
+								<a href="#"><i class="fa fa-share-alt"></i></a>
+							</div>
+						</div>
+						<div class="button-donate-thing">
+							<div class="text-butt-thing"><a href="#">บริจาค</a></div>
+						</div>
+					</div>
+				</div><!-- wrap-box-thing4 -->
+
+				<div class="select-page select-padding">
+					<a href="#" class="icon-select-page">
+					<i class="fa fa-angle-double-left"></i></a>
+					<a href="#" class="select-page-number active-number">1</a>
+					<a href="#" class="select-page-number">2</a>
+					<a href="#" class="select-page-number">3</a>
+					<a href="#" class="select-page-number">4</a>
+					<a href="#" class="select-page-number">...</a>
+					<a href="#" class="icon-select-page">
+					<i class="fa fa-angle-double-right"></i></a>
+				</div>
+			</div><!-- thing -->
+
+			<div id="food">
+				<div class="menu-header">				
+					<div class="menu-header-text">ขอรับบริจาคอาหาร</div>
+				</div>
+
+				<div id="wrap-box-food1">
+					<div class="circle-box-food">
+						<div class="text-num-food">10</div>
+						<div class="line-left-food"></div>
+						<div class="text-kg-foog">kg</div>
+						<div class="line-right-food"></div>
+					</div>
+					<div class="detail-box-food">
+						<div class="head-text-food">
+							<p>ขอรับบริจาคอาหารเพื่อช่วยเหลือน้องแมวจรจัดบริเวณหัวหิน</p>
+						</div>
+						<div class="icon-map-food">
+							<i class="fa fa-map-marker"></i>
+						</div>
+						<div class="text-map-food">
+							<p>9/9 ตำบล สามพระยา อำเภอชะอำ จังหวัดเพชรบุรี 20000</p>
+						</div>
+						<div class="text-icon-food">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-food">รักแมว</div>
+						<div class="text-icon-food">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-food">20/04/2559</div>
+						<div class="wrap-butt-food">
+							<div class="butt-share-food">
+								<div class="text-butt-food">
+									<a href="#"><i class="fa fa-share-alt"></i></a>
+								</div>
+							</div>
+							<div class="butt-donate-food">
+								<div class="text-butt-food"><a href="#">บริจาค</a></div>
+							</div>
+						</div>
+					</div>
+				</div><!-- wrap-box-food1 -->
+
+				<div id="wrap-box-food2">
+					<div class="circle-box-food">
+						<div class="text-num-food">5</div>
+						<div class="line-left-food"></div>
+						<div class="text-kg-foog">kg</div>
+						<div class="line-right-food"></div>
+					</div>
+					<div class="detail-box-food">
+						<div class="head-text-food">
+							<p>ขอรับบริจาคอาหารเพื่อให้อาหารแมวที่เลี้ยงไว้จำนวน 30 ตัว</p>
+						</div>
+						<div class="icon-map-food">
+							<i class="fa fa-map-marker"></i>
+						</div>
+						<div class="text-map-food">
+							<p>19 ถนน เจริญกรุง เขต บางรัก จังหวัด กรุงเทพ 10120</p>
+						</div>
+						<div class="text-icon-food">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-food">แม่แมว</div>
+						<div class="text-icon-food">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-food">19/04/2559</div>
+						<div class="wrap-butt-food">
+							<div class="butt-share-food">
+								<div class="text-butt-food">
+									<a href="#"><i class="fa fa-share-alt"></i></a>
+								</div>
+							</div>
+							<div class="butt-donate-food">
+								<div class="text-butt-food"><a href="#">บริจาค</a></div>
+							</div>
+						</div>
+					</div>
+				</div><!-- wrap-box-food2 -->
+
+				<div id="wrap-box-food3">
+					<div class="circle-box-food">
+						<div class="text-num-food">15</div>
+						<div class="line-left-food"></div>
+						<div class="text-kg-foog">kg</div>
+						<div class="line-right-food"></div>
+					</div>
+					<div class="detail-box-food">
+						<div class="head-text-food">
+							<p>ขอรับบริจาคอาหารเพื่อช่วยเหลือแมวมูลนิธิช่วยเหลือน้องแมว</p>
+						</div>
+						<div class="icon-map-food">
+							<i class="fa fa-map-marker"></i>
+						</div>
+						<div class="text-map-food">
+							<p>9 ถนน จันทน์ เขต สาทร จังหวัด กรุงเทพ 10120</p>
+						</div>
+						<div class="text-icon-food">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-food">สมชาย</div>
+						<div class="text-icon-food">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-food">19/04/2559</div>
+						<div class="wrap-butt-food">
+							<div class="butt-share-food">
+								<div class="text-butt-food">
+									<a href="#"><i class="fa fa-share-alt"></i></a>
+								</div>
+							</div>
+							<div class="butt-donate-food">
+								<div class="text-butt-food"><a href="#">บริจาค</a></div>
+							</div>
+						</div>
+					</div>
+				</div><!-- wrap-box-food3 -->
+
+				<div id="wrap-box-food4">
+					<div class="circle-box-food">
+						<div class="text-num-food">5</div>
+						<div class="line-left-food"></div>
+						<div class="text-kg-foog">kg</div>
+						<div class="line-right-food"></div>
+					</div>
+					<div class="detail-box-food">
+						<div class="head-text-food">
+							<p>ขอรับบริจาคอาหารเพื่อเหลือแมวจรจัดที่วัดดอน</p>
+						</div>
+						<div class="icon-map-food">
+							<i class="fa fa-map-marker"></i>
+						</div>
+						<div class="text-map-food">
+							<p>159 ถนน เจริญกรุง เขต บางรัก จังหวัด กรุงเทพ 10120</p>
+						</div>
+						<div class="text-icon-food">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-food">สมชาย</div>
+						<div class="text-icon-food">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-food">19/04/2559</div>
+						<div class="wrap-butt-food">
+							<div class="butt-share-food">
+								<div class="text-butt-food">
+									<a href="#"><i class="fa fa-share-alt"></i></a>
+								</div>
+							</div>
+							<div class="butt-donate-food">
+								<div class="text-butt-food"><a href="#">บริจาค</a></div>
+							</div>
+						</div>
+					</div>
+				</div><!-- wrap-box-food4 -->
+
+				<div class="select-page select-padding">
+					<a href="#" class="icon-select-page">
+					<i class="fa fa-angle-double-left"></i></a>
+					<a href="#" class="select-page-number active-number">1</a>
+					<a href="#" class="select-page-number">2</a>
+					<a href="#" class="select-page-number">3</a>
+					<a href="#" class="select-page-number">4</a>
+					<a href="#" class="select-page-number">...</a>
+					<a href="#" class="icon-select-page">
+					<i class="fa fa-angle-double-right"></i></a>
+				</div>
+			</div><!-- food -->
+
+			<div id="adopt">
+				<div class="menu-header">
+					<div class="menu-header-text">รับเลี้ยง</div>
+				</div>
+
+				<div class="bg-menu-adopt">
+					<div class="wrap-button-type-adopt">
+						<div class="button-type-adopt activebtype">
+							<div class="text-type-adopt"><a href="#">ส่งต่อแมว</a></div>
+						</div>
+						<div class="button-type-adopt">
+							<div class="text-type-adopt"><a href="#">แมวไร้บ้าน</a></div>
+						</div>
+					</div>
+				</div><!-- end bg-menu-adopt -->
+
+				<div id="adopt-box-data1">
+					<div class="warpper-adopt-img">
+						<div class="adopt-img-cat">
+							<img src="images/adopt-img-cat.png">
+						</div>
+						<div class="select-img-button">
+							<div class="img-button activebutton"></div>
+							<div class="img-button"></div>
+							<div class="img-button"></div>
+							<div class="img-button"></div>
+							<div class="img-button"></div>
+						</div>
+					</div><!-- warpper-adopt-img -->
+					<div class="warpper-adopt-detail">
+						<div class="wrapper-menu-adopt">
+							<div class="button-menu-adopt">
+								<div class="text-button-adopt">ข้อมูล</div>
+							</div>
+							<div class="button-menu-adopt">
+								<div class="text-button-adopt">พูดคุย</div>
+							</div>
+							<div class="button-menu-adopt">
+								<div class="text-button-adopt">แผนที่</div>
+							</div>
+						</div>
+						<div class="adopt-detail">
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">ชื่อ : </div>
+								<div class="adopt-text-detail">น้องฝ้าย</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">อายุ : </div>
+								<div class="adopt-text-detail">6 เดือน</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">เพศ : </div>
+								<div class="adopt-text-detail">เมีย</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">สี : </div>
+								<div class="adopt-text-detail">ครีม</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">ลาย : </div>
+								<div class="adopt-text-detail">ดำ</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">นิสัย : </div>
+								<div class="adopt-text-detail">น่ารัก ขี้อ้อน กินจุ ชอบเล่น เลี้ยงง่าย ไม่กัด</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">ย้ายบ้านไปอยู๋คอนโดที่ห้ามเลี้ยงสัตว์</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="icon-text-adopt">
+									<i class="fa fa-user"></i>
+								</div>
+								<div class="adopt-text">user55</div>
+								<div class="icon-text-adopt">
+									<i class="fa fa-calendar"></i>
+								</div>
+								<div class="adopt-text">20/04/2559</div>
+							</div>
+						</div>	<!-- adopt-detail -->
+						<div class="button-adopt">
+							<div class="text-botton-adopt">รับเลี้ยง</div>
+						</div>
+						<div class="button-shared">
+							<a href="#" class="icon-shared-adopt">
+							<i class="fa fa-share-alt"></i></a>
+						</div>	
+					</div><!-- warpper-adopt-detail -->		
+				</div><!-- end adopt-box-data1 -->
+
+				<div id="adopt-box-data2">
+					<div class="warpper-adopt-img">
+						<div class="adopt-img-cat">
+							<img src="images/adopt-img-cat-01.png">
+						</div>
+						<div class="select-img-button">
+							<div class="img-button activebutton"></div>
+							<div class="img-button"></div>
+							<div class="img-button"></div>
+							<div class="img-button"></div>
+							<div class="img-button"></div>
+						</div>
+					</div><!-- warpper-adopt-img -->
+					<div class="warpper-adopt-detail">
+						<div class="wrapper-menu-adopt">
+							<div class="button-menu-adopt">
+								<div class="text-button-adopt">ข้อมูล</div>
+							</div>
+							<div class="button-menu-adopt">
+								<div class="text-button-adopt">พูดคุย</div>
+							</div>
+							<div class="button-menu-adopt">
+								<div class="text-button-adopt">แผนที่</div>
+							</div>
+						</div>
+						<div class="adopt-detail">
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">ชื่อ : </div>
+								<div class="adopt-text-detail">ลัคกี้</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">อายุ : </div>
+								<div class="adopt-text-detail">1 ปี</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">เพศ : </div>
+								<div class="adopt-text-detail">ผู้</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">สี : </div>
+								<div class="adopt-text-detail">ขาว</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">ลาย : </div>
+								<div class="adopt-text-detail">ดำ - เทา</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">นิสัย : </div>
+								<div class="adopt-text-detail">ขี้อ้อน ชอบกินขนม ชอบเล่น ขับถ่ายเป็นที่</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">ไม่สะดวกเลี้ยงต่อ</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="icon-text-adopt">
+									<i class="fa fa-user"></i>
+								</div>
+								<div class="adopt-text">katy</div>
+								<div class="icon-text-adopt">
+									<i class="fa fa-calendar"></i>
+								</div>
+								<div class="adopt-text">20/04/2559</div>
+							</div>
+						</div>	<!-- adopt-detail -->
+						<div class="button-adopt">
+							<div class="text-botton-adopt">รับเลี้ยง</div>
+						</div>
+						<div class="button-shared">
+							<a href="#" class="icon-shared-adopt">
+							<i class="fa fa-share-alt"></i></a>
+						</div>	
+					</div><!-- warpper-adopt-detail -->		
+				</div><!-- end adopt-box-data2 -->
+
+				<div id="adopt-box-data3">
+					<div class="warpper-adopt-img">
+						<div class="adopt-img-cat">
+							<img src="images/adopt-img-cat-01.png">
+						</div>
+						<div class="select-img-button">
+							<div class="img-button activebutton"></div>
+							<div class="img-button"></div>
+							<div class="img-button"></div>
+							<div class="img-button"></div>
+							<div class="img-button"></div>
+						</div>
+					</div><!-- warpper-adopt-img -->
+					<div class="warpper-adopt-detail">
+						<div class="wrapper-menu-adopt">
+							<div class="button-menu-adopt">
+								<div class="text-button-adopt">ข้อมูล</div>
+							</div>
+							<div class="button-menu-adopt">
+								<div class="text-button-adopt">พูดคุย</div>
+							</div>
+							<div class="button-menu-adopt">
+								<div class="text-button-adopt">แผนที่</div>
+							</div>
+						</div>
+						<div class="adopt-detail">
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">ชื่อ : </div>
+								<div class="adopt-text-detail">บาร์บี้</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">อายุ : </div>
+								<div class="adopt-text-detail">1 ปี</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">เพศ : </div>
+								<div class="adopt-text-detail">เมีย</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">สี : </div>
+								<div class="adopt-text-detail">ส้ม</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">ลาย : </div>
+								<div class="adopt-text-detail">ขาว - เทา</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">นิสัย : </div>
+								<div class="adopt-text-detail">ชอบกิน ชอบเล่น ชอบให้เกาท้องให้</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">ไม่สะดวกเลี้ยงต่อ</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="icon-text-adopt">
+									<i class="fa fa-user"></i>
+								</div>
+								<div class="adopt-text">katy</div>
+								<div class="icon-text-adopt">
+									<i class="fa fa-calendar"></i>
+								</div>
+								<div class="adopt-text">20/04/2559</div>
+							</div>
+						</div>	<!-- adopt-detail -->
+						<div class="button-adopt">
+							<div class="text-botton-adopt">รับเลี้ยง</div>
+						</div>
+						<div class="button-shared">
+							<a href="#" class="icon-shared-adopt">
+							<i class="fa fa-share-alt"></i></a>
+						</div>	
+					</div><!-- warpper-adopt-detail -->		
+				</div><!-- end adopt-box-data3 -->
+				
+				<div id="adopt-box-data4">
+					<div class="warpper-adopt-img">
+						<div class="adopt-img-cat">
+							<img src="images/adopt-img-cat-01.png">
+						</div>
+						<div class="select-img-button">
+							<div class="img-button activebutton"></div>
+							<div class="img-button"></div>
+							<div class="img-button"></div>
+							<div class="img-button"></div>
+							<div class="img-button"></div>
+						</div>
+					</div><!-- warpper-adopt-img -->
+					<div class="warpper-adopt-detail">
+						<div class="wrapper-menu-adopt">
+							<div class="button-menu-adopt">
+								<div class="text-button-adopt">ข้อมูล</div>
+							</div>
+							<div class="button-menu-adopt">
+								<div class="text-button-adopt">พูดคุย</div>
+							</div>
+							<div class="button-menu-adopt">
+								<div class="text-button-adopt">แผนที่</div>
+							</div>
+						</div>
+						<div class="adopt-detail">
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">ชื่อ : </div>
+								<div class="adopt-text-detail">ทิฟฟี่</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">อายุ : </div>
+								<div class="adopt-text-detail">6 เดือน</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">เพศ : </div>
+								<div class="adopt-text-detail">ผู้</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">สี : </div>
+								<div class="adopt-text-detail">เทา</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">ลาย : </div>
+								<div class="adopt-text-detail">-</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">นิสัย : </div>
+								<div class="adopt-text-detail">ไม่ชอบเล่น ชอบกิน ขับถ่ายเป็นที่ ไม่ดื้อ</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="adopt-head-detail">ต้องย้ายไปทำงานต่างจังหวัด</div>
+							</div>
+							<div class="wrap-text-adopt">
+								<div class="icon-text-adopt">
+									<i class="fa fa-user"></i>
+								</div>
+								<div class="adopt-text">fuza</div>
+								<div class="icon-text-adopt">
+									<i class="fa fa-calendar"></i>
+								</div>
+								<div class="adopt-text">19/04/2559</div>
+							</div>
+						</div>	<!-- adopt-detail -->
+						<div class="button-adopt">
+							<div class="text-botton-adopt">รับเลี้ยง</div>
+						</div>
+						<div class="button-shared">
+							<a href="#" class="icon-shared-adopt">
+							<i class="fa fa-share-alt"></i></a>
+						</div>	
+					</div><!-- warpper-adopt-detail -->		
+				</div><!-- end adopt-box-data4 -->
+
+				<div class="select-page-adopt">
+					<a href="#" class="icon-select-page">
+					<i class="fa fa-angle-double-left"></i></a>
+					<a href="#" class="select-page-number active-number">1</a>
+					<a href="#" class="select-page-number">2</a>
+					<a href="#" class="select-page-number">3</a>
+					<a href="#" class="select-page-number">4</a>
+					<a href="#" class="select-page-number">...</a>
+					<a href="#" class="icon-select-page">
+					<i class="fa fa-angle-double-right"></i></a>
+				</div>
+			</div><!-- end adopted -->
+
+			<div id="think">
+				<div class="menu-header">				
+					<div class="menu-header-text">แลกเปลี่ยนความคิด</div>
+				</div>
+				<div id="wrap-box-think1">
+					<div class="wrap-text-head">
+						<div class="box-think-head">
+							<p>แมวกินข้าวน้อยลงทำยังไงดี</p>
+						</div>
+						<div class="text-icon-think">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-think">แม่แมว</div>
+						<div class="text-icon-think">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-think">19/04/2559</div>						
+					</div>
+					<div class="butt-share-think">
+						<div class="icon-share-think">
+							<i class="fa fa-share-alt"></i> 
+						</div>
+					</div>
+					<div class="box-think">
+						<div class="text-box-think">
+							<p>ลองให้กินยาดู</p>
+						</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-boxthink">ทาสแมว</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-boxthink">20/04/2559</div>
+					</div>
+					<div class="box-think">
+						<div class="text-box-think">
+							<p>แมวเราก็เป็นไม่หายสักที</p>
+						</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-boxthink">คนรักแมว</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-boxthink">20/04/2559</div>
+					</div>
+					<div class="box-think">
+						<div class="text-box-think">
+							<p>ใครรู้วิธีบอกเราด้วยนะ</p>
+						</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-boxthink">แม่แมว</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-boxthink">20/04/2559</div>
+					</div>
+					<div class="butt-read-more">
+						<div class="text-readmore">อ่านต่อ</div>
+					</div>
+					<div class="wrap-think-input">
+						<input type=text class="think-input">
+						<div class="butt-send-think">
+							<div class="text-send-think">ส่ง</div>
+						</div>
+					</div>
+				</div><!-- wrap-box-think1 -->
+
+				<div id="wrap-box-think2">
+					<div class="wrap-text-head">
+						<div class="box-think-head">
+							<p>ทำไมแมวถึงกลัวกล้วยด้วย</p>
+						</div>
+						<div class="text-icon-think">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-think">พ่อแมวน้อย</div>
+						<div class="text-icon-think">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-think">18/04/2559</div>						
+					</div>
+					<div class="butt-share-think">
+						<div class="icon-share-think">
+							<i class="fa fa-share-alt"></i> 
+						</div>
+					</div>
+					<div class="box-think">
+						<div class="text-box-think">
+							<p>ของเรากลัวมะม่วง</p>
+						</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-boxthink">ทาสแมว</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-boxthink">20/04/2559</div>
+					</div>
+					<div class="box-think">
+						<div class="text-box-think">
+							<p>อาจจะคิดว่าเป็นศัตรูมั้งคะ</p>
+						</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-boxthink">คนรักแมว</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-boxthink">20/04/2559</div>
+					</div>
+					<div class="box-think">
+						<div class="text-box-think">
+							<p>ของเราก็กลัวกล้วยเหมือนกันสงสัยจัง</p>
+						</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-boxthink">แมวหล่อ</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-boxthink">20/04/2559</div>
+					</div>
+					<div class="butt-read-more">
+						<div class="text-readmore">อ่านต่อ</div>
+					</div>
+					<div class="wrap-think-input">
+						<input type=text class="think-input">
+						<div class="butt-send-think">
+							<div class="text-send-think">ส่ง</div>
+						</div>
+					</div>
+				</div><!-- wrap-box-think2 -->
+
+				<div id="wrap-box-think3">
+					<div class="wrap-text-head">
+						<div class="box-think-head">
+							<p>พาแมวไปทำหมันดีไหมคะ</p>
+						</div>
+						<div class="text-icon-think">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-think">แม่แมว</div>
+						<div class="text-icon-think">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-think">15/04/2559</div>						
+					</div>
+					<div class="butt-share-think">
+						<div class="icon-share-think">
+							<i class="fa fa-share-alt"></i> 
+						</div>
+					</div>
+					<div class="box-think">
+						<div class="text-box-think">
+							<p>ดีครับ จะได้ไม่ต้องรอเลี้ยงลูกแมวอีกหลายตัว</p>
+						</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-boxthink">ทาสแมว</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-boxthink">20/04/2559</div>
+					</div>
+					<div class="box-think">
+						<div class="text-box-think">
+							<p>ดีค่ะ แมวเราไปทำมาแล้วอ้วนตุบเลยค่ะ</p>
+						</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-boxthink">น้องแมวน้อย</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-boxthink">20/04/2559</div>
+					</div>
+					<div class="box-think">
+						<div class="text-box-think">
+							<p>ถ้าเลี้ยงไหว อย่าไปทำเลยค่ะสงสารแมว</p>
+						</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-boxthink">คนสวยใจดี</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-boxthink">19/04/2559</div>
+					</div>
+					<div class="butt-read-more">
+						<div class="text-readmore">อ่านต่อ</div>
+					</div>
+					<div class="wrap-think-input">
+						<input type=text class="think-input">
+						<div class="butt-send-think">
+							<div class="text-send-think">ส่ง</div>
+						</div>
+					</div>
+				</div><!-- wrap-box-think3 -->
+
+				<div id="wrap-box-think4">
+					<div class="wrap-text-head">
+						<div class="box-think-head">
+							<p>น้องแมวถ่ายไม่เป็นที่เลยค่ะ ทำไงดีคะ</p>
+						</div>
+						<div class="text-icon-think">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-think">แมวลายเสือ</div>
+						<div class="text-icon-think">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-think">15/04/2559</div>						
+					</div>
+					<div class="butt-share-think">
+						<div class="icon-share-think">
+							<i class="fa fa-share-alt"></i> 
+						</div>
+					</div>
+					<div class="box-think">
+						<div class="text-box-think">
+							<p>เอาสิ่งที่แมวชอบถ่ายใส่ ไปวางไว้ในที่ที่อยากให้แมวไปถ่ายครับ</p>
+						</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-boxthink">แม่แมว</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-boxthink">16/04/2559</div>
+					</div>
+					<div class="box-think">
+						<div class="text-box-think">
+							<p>แมวเราสอนให้ไปถ่ายในห้องน้ำ สดวกมากเลยค่ะ</p>
+						</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-boxthink">น้องแมวน้อย</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-boxthink">17/04/2559</div>
+					</div>
+					<div class="box-think">
+						<div class="text-box-think">
+							<p>ลองทำตามความเห็น 1 ดูนะคะ ฉันลองทำแล้วได้ผลค่ะ</p>
+						</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="text-boxthink">เหมียวน้อย</div>
+						<div class="text-icon-boxthink">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="text-boxthink">18/04/2559</div>
+					</div>
+					<div class="butt-read-more">
+						<div class="text-readmore">อ่านต่อ</div>
+					</div>
+					<div class="wrap-think-input">
+						<input type=text class="think-input">
+						<div class="butt-send-think">
+							<div class="text-send-think">ส่ง</div>
+						</div>
+					</div>
+				</div><!-- wrap-box-think4 -->
+
+				<div class="select-page select-padding">
+					<a href="#" class="icon-select-page">
+					<i class="fa fa-angle-double-left"></i></a>
+					<a href="#" class="select-page-number active-number">1</a>
+					<a href="#" class="select-page-number">2</a>
+					<a href="#" class="select-page-number">3</a>
+					<a href="#" class="select-page-number">4</a>
+					<a href="#" class="select-page-number">...</a>
+					<a href="#" class="icon-select-page">
+					<i class="fa fa-angle-double-right"></i></a>
+				</div>
+			</div><!-- think -->
+
+			<div id="create-board">
+				<div class="menu-header">				
+					<div class="menu-header-text">สร้างบอร์ดใหม่</div>
+				</div>
+				<div class="wrap-select-box">
+					<div class="type-select">ประเภท</div>
+					<select class="select-type-board" autofocus>
+						<option value="1">ขอรับบริจาคสิ่งของ</option>
+						<option value="2">ขอรับบริจาคเลือด</option>
+						<option value="3">ขอรับบริจาคเงิน</option>
+						<option value="4">ขอรับบริจาคอาหาร</option>
+						<option value="5">หาบ้าน</option>
+						<option value="6">แลกเปลี่ยนความคิดเห็น</option>
+					</select>
+				</div>
+				<div class="wrap-detail-create">
+					<div class="text-detail">ชื่อสิ่งของ</div>
+					<input type="text" class="input-detail">
+					<div class="text-detail">จำนวน</div>
+					<input type="text" class="input-detail">
+					<div class="text-detail">รายละเอียด</div>
+					<textarea></textarea>
+					<div class="text-detail wrap-add">ที่อยู่</div>
+					<textarea></textarea>
+					<div class="button-create">
+						<div class="text-but-create">ยืนยัน</div>
+					</div>
+					<div class="button-cancle">
+						<div class="text-but-cancle">ยกเลิก</div>
+					</div>
+				</div>
+			</div><!-- create-board -->
+
+			<div class="footer">
+				<div class="menu-footer"></div>
+				<div class="bg-text-footer"></div>
+
+				<div class="wrap-meunu-text">
+					<ul class="wrapper-footer-text">
+						<li class="text-footer"><a href="reg_member.php">สมัครสมาชิก</a></li>
+						<li class="text-footer"><a href="login.php">เข้าสู่ระบบ</a></li>
+						<li class="text-footer"><a href="contact.html">เกี่ยวกับเรา</a></li>
+						<li class="text-footer"><a href="#">เป้าหมาย</a></li>
+						<li class="text-footer"><a href="#">สถิติการบริจาค</a></li>
+					</ul>
+					<ul class="wrapper-footer-text">
+						<li class="text-footer"><a href="#">บริจาคเงิน</a></li>
+						<li class="text-footer"><a href="#">บริจาคอาหาร</a></li>
+						<li class="text-footer"><a href="#">บริจาคเลือด</a></li>
+						<li class="text-footer"><a href="#">หาบ้านให้แมว</a></li>
+						<li class="text-footer"><a href="#">ติดต่อเรา</a></li>
+					</ul>
+					<ul class="wrapper-footer-text">
+						<li class="text-footer"><a href="#">วิธีใช้งานเว็บไซต์</a></li>
+						<li class="text-footer"><a href="#">ขอความช่วยเหลือ</a></li>
+						<li class="text-footer"><a href="#">รับข่าวสารจากเว็บไซต์</a></li>
+						<li class="text-footer"><a href="#">ผู้บริจาคล่าสุด</a></li>
+						<li class="text-footer"><a href="content.html">ดูบอร์ดทั้งหมด</a></li>
+					</ul>	
+				</div>
+				
+				<div class="wrap-meunu-text-destop">
+					<ul class="wrapper-footer-text">
+						<li class="text-footer"><a href="reg_member.php">สมัครสมาชิก</a></li>
+						<li class="text-footer"><a href="#">บริจาคเงิน</a></li>
+						<li class="text-footer"><a href="#">วิธีใช้งานเว็บไซต์</a></li>
+					</ul>
+					<ul class="wrapper-footer-text">
+						<li class="text-footer"><a href="login.php">เข้าสู่ระบบ</a></li>
+						<li class="text-footer"><a href="#">บริจาคอาหาร</a></li>
+						<li class="text-footer"><a href="#">ขอความช่วยเหลือ</a></li>
+					</ul>
+					<ul class="wrapper-footer-text">
+						<li class="text-footer"><a href="contact.html">เกี่ยวกับเรา</a></li>
+						<li class="text-footer"><a href="#">บริจาคเลือด</a></li>
+						<li class="text-footer"><a href="#">รับข่าวสารจากเว็บไซต์</a></li>
+					</ul>
+					<ul class="wrapper-footer-text">
+						<li class="text-footer"><a href="#">เป้าหมาย</a></li>
+						<li class="text-footer"><a href="#">หาบ้านให้แมว</a></li>
+						<li class="text-footer"><a href="#">ผู้บริจาคล่าสุด</a></li>
+					</ul>	
+					<ul class="wrapper-footer-text">
+						<li class="text-footer"><a href="#">สถิติการบริจาค</a></li>
+						<li class="text-footer"><a href="#">ติดต่อเรา</a></li>
+						<li class="text-footer"><a href="content.html">ดูบอร์ดทั้งหมด</a></li>
+					</ul>
+				</div>
+
+				<div class="wrapper-icon-footer">
+					<a href="#" class="icon-footer">
+					<i class="fa fa-facebook-square"></i></a>
+					<a href="#" class="icon-footer">
+					<i class="fa fa-google-plus-square"></i></a>
+					<a href="#" class="icon-footer">
+					<i class="fa fa-youtube-play"></i></a>
+					<a href="#" class="icon-footer">
+					<i class="fa fa-instagram"></i></a>
+				</div>
+
+				<div class="wrapper-input-footer">
+					<input type="text" class="input-email-footer" placeholder="E-mail" />
+					<div class="button-email-footer">
+						<a href="#" class="icon-email-footer">
+						<i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>		
+
+				<div class="bg-credit-footer">
+					<div class="text-credit-footer">
+						Copyright 2016   |   ma-rsa.com   |   All right Resered
+					</div>
+				</div>
+			</div><!-- end footer -->
+
+		</div><!-- end wrapper -->
+	</body>
+</html>
+
+<script>
+	//video-header
+	var vid = document.getElementById("bgvid");
+	function vidFade() {
+	  vid.classList.add("stopfade");
+	}
+	vid.addEventListener('ended', function()
+	{
+	// only functional if "loop" is removed 
+	vid.pause();
+	// to capture IE10
+	vidFade();
+	}); 
+	//end video-header
+</script>

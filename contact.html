@@ -1,0 +1,461 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="UTF-8">
+		<title>MA-RSA</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style-contact.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">	
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">	
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtr3FT0uDFpjx-VisBICLWclTjETC6UTc"></script>
+		<script>
+		function initialize() {
+		  var mapProp = {
+		    center:new google.maps.LatLng(13.746058, 100.534909),
+		    zoom:5,
+		    mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>	
+
+	</head>
+
+	<body>
+		<div class="header">
+			<video autoplay  id="bgvid" loop>
+			<source src="videos/video-header.mp4" type="video/mp4">
+			</video>
+
+			<div class="bg-header-mobile"></div>
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png"></a>
+			</div>
+
+				<div class="menu-nav-destop">
+					<ul>
+						<li><a href="index.php" class="text-menu-destop">หน้าแรก</a></li>
+						<li><a href="#" class="text-menu-destop">บริจาค</a></li>
+						<li><a href="#" class="text-menu-destop">โครงการ</a></li>
+						<li><a href="content.html" class="text-menu-destop">บอร์ด</a></li>
+						<li><a href="contact.html" class="text-menu-destop active-menu-des">เกี่ยวกับเรา</a></li>
+						<li><a href="login.php" class="text-menu-destop">เข้าสู่ระบบ</a></li>
+					</ul>
+				</div>
+
+				<input class="burger-check" id="burger-check" type="checkbox">
+				<label for="burger-check" class="burger"></label>
+				<nav id="navigation1" class="navigation">
+					<ul>
+					    <li><a href="index.php" class="text-burger">หน้าแรก</a></li>
+					    <li><a href="#" class="text-burger">บริจาค</a></li>
+					    <li><a href="#" class="text-burger">โครงการ</a></li>
+					    <li><a href="content.html" class="text-burger">บอร์ด</a></li>
+					    <li><a href="contact.html" class="text-burger active-menu">เกี่ยวกับเรา</a></li>
+					    <li><a href="login.php" class="text-burger">เข้าสู่ระบบ</a></li>
+					</ul>
+				</nav>
+					
+				<div class="thumb-button">
+					<div class="circle-head">
+						<a href="login.php" class="icon-head">
+						<i class="fa fa-user"></i></a>
+					</div>
+					<div class="circle-head">
+						<a href="search.php" class="icon-head">
+						<i class="fa fa-search"></i></a>
+					</div>
+				</div>			
+		</div><!-- end header -->
+		
+		<div id="wrapper">
+			<div class="goal">
+				<div class="menu-header">				
+					<div class="menu-header-text">เป้าหมาย</div>
+				</div>
+				<div class="bg-goal-left"></div>
+				<div class="bg-goal-right"></div>
+				<div class="work-item">
+					<div class="goal-cicle">
+						<div class="text-goal">วิสัยทัศน์</div>					
+						<div class="goal-cicle-hover">
+							<p>มุ่งเป็นองค์กรการกุศล</br>
+								เพื่อเป็นสื่อกลางในการ</br>
+								ช่วยเหลือให้คนไทย</br>
+								รักแมวมากขึ้น</p>
+						</div>
+					</div>
+				</div>
+				<div class="work-item">
+					<div class="goal-cicle">
+						<div class="text-goal">พันธกิจ</div>					
+						<div class="goal-cicle-hover">
+							<p>มุ่งเป็นองค์กรการกุศล</br>
+								เพื่อเป็นสื่อกลางในการ</br>
+								ช่วยเหลือให้คนไทย</br>
+								รักแมวมากขึ้น</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- end goal -->
+
+			<div class="about-as">
+				<div class="menu-header">				
+					<div class="menu-header-text">เกี่ยวกับเรา</div>
+				</div>
+				<div class="bg-goal-left2"></div>
+				<div class="bg-goal-right2"></div>
+				<div class="about-year">
+					<div class="text-year">2014</div>
+				</div>
+				<div class="about-text">เริ่มต้นสร้างเว็บไซต์</div>
+
+				<div class="about-year">
+					<div class="text-year">2015</div>
+				</div>
+				<div class="about-text">มีผู้เข้าร่วมกว่าแสนคน</div>
+
+				<div class="about-year">
+					<div class="text-year">2016</div>
+				</div>
+				<div class="about-text">อนาคตสร้างได้ด้วยมือเรา</div>
+			</div><!-- about-as -->
+
+			<div class="help-me">
+				<div class="menu-header">				
+					<div class="menu-header-text">คุณจะช่วยเราได้อย่างไร</div>
+				</div>
+
+				<div class="wrap-box-help">
+					<div class="left-box">
+						<div class="cicle-help">
+							<div class="icon-help">
+								<i class="fa fa-dollar"></i>
+							</div>
+						</div>
+						<div class="button-help">
+							<div class="text-button">
+								<a href="#">บริจาค</a>
+							</div>
+						</div>
+					</div>
+					<div class="right-box">
+						<div class="text-head-help">บริจาคเงิน</div>
+						<div class="text-help">
+							<p>คุณสามารถช่วยชีวิตน้องแมว<br>
+							ได้โดยการช่วยบริจาคเงินให้เรา<br>
+							เงินของคุณเราจะนำไปช่วยเหลือ<br>
+							ชีวิตน้องแมว ไม่ว่าจะเป็นแมวจรจัด<br>
+							แมวที่ประสบอุบัติเหตุ เป็นต้น<br>
+							เชิญมาร่วมบริจาคเงินกับเรา</p>
+						</div>
+					</div>
+				</div><!-- wrap-box-help -->
+
+				<div class="wrap-box-help">
+					<div class="left-box">
+						<div class="cicle-help">
+							<div class="icon-help">
+								<i class="fa fa-home"></i>
+							</div>
+						</div>
+						<div class="button-help">
+							<div class="text-button">
+								<a href="#">รับเลี้ยง</a>
+							</div>
+						</div>
+					</div>
+					<div class="right-box">
+						<div class="text-head-help">หาบ้านให้น้องแมว</div>
+						<div class="text-help">
+							<p>คุณสามารถรับเลี้ยงน้องแมว<br>
+							ไม่ว่าจะเป็นแมวไร้บ้าน หรือแมวที่<br>
+							เจา้ของต้องการส่งต่อ เพื่อช่วย<br>
+							เหลือชีวิตน้องแมวให้มีบ้านอยู่<br>
+							และได้รับความอบอุ่นจากผู้เลี้ยง<br>
+							เชิญมาร่วมรับเลี้ยงแมวกับเรา</p>
+						</div>
+					</div>
+				</div><!-- wrap-box-help -->
+
+				<div class="wrap-box-help">
+					<div class="left-box">
+						<div class="cicle-help">
+							<div class="icon-help">
+								<i class="fa fa-tint"></i>
+							</div>
+						</div>
+						<div class="button-help">
+							<div class="text-button">
+								<a href="#">บริจาค</a>
+							</div>
+						</div>
+					</div>
+					<div class="right-box">
+						<div class="text-head-help">บริจาคเลือดให้แมว</div>
+						<div class="text-help">
+							<p>คุณสามารถพาแมวของคุณ<br>
+							มาบริจาคเลือดเพื่อช่วยเหลือ<br>
+							ชีวิตแมวได้อีกหลายชีวิต<br>
+							ยังมีแมวที่ยังต้องการเลือดอยู่อีก<br>
+							จำนวนมาก ร่วมกันพาแมวของคุณ<br>
+							มาบริจาคเลือดให้แมวกับเรา</p>
+						</div>
+					</div>
+				</div><!-- wrap-box-help -->
+
+				<div class="wrap-box-help">
+					<div class="left-box">
+						<div class="cicle-help">
+							<div class="icon-help">
+								<i class="fa fa-paw"></i>
+							</div>
+						</div>
+						<div class="button-help">
+							<div class="text-button">
+								<a href="#">บริจาค</a>
+							</div>
+						</div>
+					</div>
+					<div class="right-box">
+						<div class="text-head-help">บริจาคของใช้แมว</div>
+						<div class="text-help">
+							<p>คุณสามารถร่วมบริจาคของใช้<br>
+							ใหม่ หรือส่งต่อของใช้ที่มีคุณภาพ<br>
+							ให้กับน้องแมวที่ต้องการได้<br>
+							เชิญมาร่วมบริจาคของใช้ของ<br>
+							น้องแมวกับเรา</p>
+						</div>
+					</div>
+				</div><!-- wrap-box-help -->
+
+				<div class="wrap-box-help">
+					<div class="left-box">
+						<div class="cicle-help">
+							<div class="icon-help">
+								<i class="fa fa-users"></i>
+							</div>
+						</div>
+						<div class="button-help">
+							<div class="text-button">
+								<a href="#">เข้าร่วม</a>
+							</div>
+						</div>
+					</div>
+					<div class="right-box">
+						<div class="text-head-help">โครงการ</div>
+						<div class="text-help">
+							<p>คุณสามารถช่วยเหลือชีวิตน้องแมว<br>
+							โดยการเป็นหนึ่งในโครงการของเรา<br>
+							เรามีหลายโครงการที่ต้องการ<br>
+							ช่วยเหลือชีวิตน้องแมว<br>
+							เชิญมาเข้าร่วมโครงการช่วยเหลือ<br>
+							น้องแมวกับเรา</p>
+						</div>
+					</div>
+				</div><!-- wrap-box-help -->
+
+				<div class="wrap-help-web">
+					<div class="wrap-cicle-icon">
+						<div class="cicle-icon-help">
+							<div class="logo-help">
+								<i class="fa fa-dollar"></i>
+							</div>
+						</div>
+						<div class="cicle-icon-help">
+							<div class="logo-help">
+								<i class="fa fa-home"></i>
+							</div>
+						</div>
+						<div class="cicle-icon-help">
+							<div class="logo-help">
+								<i class="fa fa-tint"></i>
+							</div>
+						</div>
+						<div class="cicle-icon-help">
+							<div class="logo-help">
+								<i class="fa fa-paw"></i>
+							</div>
+						</div>
+						<div class="cicle-icon-help">
+							<div class="logo-help">
+								<i class="fa fa-users"></i>
+							</div>
+						</div>
+					</div>
+					<div class="web-box-help">
+						<div class="head-box-text">หาบ้านให้แมว</div>
+						<div class="text-box-head">
+							<p>คุณสามารถรับเลี้ยงน้องแมวไม่ว่าจะเป็นแมวไร้บ้าน <br>หรือแมวที่เจา้ของต้องการส่งต่อ เพื่อช่วยเหลือชีวิตน้องแมว<br>ให้มีบ้านอยู่และได้รับความอบอุ่นจากผู้เลี้ยง เชิญมาร่วมรับเลี้ยงแมวกับเรา</p>	
+						</div>
+						<div class="button-box-help">
+							<div class="button-box-text">รับเลี้ยง</div>
+						</div>
+					</div>
+				</div><!-- wrap-help-web -->
+			</div><!-- help-me -->
+
+			<div class="contact">
+				<div class="menu-header">				
+					<div class="menu-header-text">การติดต่อ</div>
+				</div>
+
+				<div class="wrap-input">
+					<div class="line-input">
+						<div class="text-input">ชื่อ</div>
+						<input type="text">
+					</div>
+					<div class="line-input">
+						<div class="text-input">อีเมลล์</div>
+						<input type="text">
+					</div>
+					<div class="line-input">
+						<div class="text-input">ข้อความ</div>
+						<textarea></textarea>
+					</div>
+					<input type="submit" class="input-submit" value="ส่ง">
+				</div>
+
+				<div class="contact-me">
+					<div class="text-head">ติดต่อเรา</div>
+					<div class="wrap-contact-box">
+						<div class="box-left">
+							<div class="icon-contact">
+								<i class="fa fa-map-marker"></i>
+							</div>
+						</div>
+						<div class="box-right">
+							<p>4/14-15 ถนน ชิดลม อำเภอ แม่สอด จังหวัด ตาก  63110</p>
+						</div>
+					</div>
+
+					<div class="wrap-contact-box2">
+						<div class="box-left2">
+							<div class="icon-contact2">
+								<i class="fa fa-mobile"></i>
+							</div>
+						</div>
+						<div class="box-right2">
+							<p>083-945-4324</p>
+						</div>
+					</div>
+
+					<div class="wrap-contact-box2">
+						<div class="box-left2">
+							<div class="icon-contact2">
+								<i class="fa fa-envelope"></i>
+							</div>
+						</div>
+						<div class="box-right2">
+							<p>contact@marsa.com</p>
+						</div>
+					</div>
+				</div>
+
+				<div id="googleMap"></div>
+			</div><!-- contact -->
+
+			<div class="footer">
+				<div class="menu-footer"></div>
+				<div class="bg-text-footer"></div>
+
+				<div class="wrap-meunu-text">
+					<ul class="wrapper-footer-text">
+						<li class="text-footer"><a href="reg_member.php">สมัครสมาชิก</a></li>
+						<li class="text-footer"><a href="login.php">เข้าสู่ระบบ</a></li>
+						<li class="text-footer"><a href="contact.html">เกี่ยวกับเรา</a></li>
+						<li class="text-footer"><a href="#">เป้าหมาย</a></li>
+						<li class="text-footer"><a href="#">สถิติการบริจาค</a></li>
+					</ul>
+					<ul class="wrapper-footer-text">
+						<li class="text-footer"><a href="#">บริจาคเงิน</a></li>
+						<li class="text-footer"><a href="#">บริจาคอาหาร</a></li>
+						<li class="text-footer"><a href="#">บริจาคเลือด</a></li>
+						<li class="text-footer"><a href="#">หาบ้านให้แมว</a></li>
+						<li class="text-footer"><a href="#">ติดต่อเรา</a></li>
+					</ul>
+					<ul class="wrapper-footer-text">
+						<li class="text-footer"><a href="#">วิธีใช้งานเว็บไซต์</a></li>
+						<li class="text-footer"><a href="#">ขอความช่วยเหลือ</a></li>
+						<li class="text-footer"><a href="#">รับข่าวสารจากเว็บไซต์</a></li>
+						<li class="text-footer"><a href="#">ผู้บริจาคล่าสุด</a></li>
+						<li class="text-footer"><a href="content.html">ดูบอร์ดทั้งหมด</a></li>
+					</ul>	
+				</div>
+				
+				<div class="wrap-meunu-text-destop">
+					<ul class="wrapper-footer-text">
+						<li class="text-footer"><a href="reg_member.php">สมัครสมาชิก</a></li>
+						<li class="text-footer"><a href="#">บริจาคเงิน</a></li>
+						<li class="text-footer"><a href="#">วิธีใช้งานเว็บไซต์</a></li>
+					</ul>
+					<ul class="wrapper-footer-text">
+						<li class="text-footer"><a href="login.php">เข้าสู่ระบบ</a></li>
+						<li class="text-footer"><a href="#">บริจาคอาหาร</a></li>
+						<li class="text-footer"><a href="#">ขอความช่วยเหลือ</a></li>
+					</ul>
+					<ul class="wrapper-footer-text">
+						<li class="text-footer"><a href="contact.html">เกี่ยวกับเรา</a></li>
+						<li class="text-footer"><a href="#">บริจาคเลือด</a></li>
+						<li class="text-footer"><a href="#">รับข่าวสารจากเว็บไซต์</a></li>
+					</ul>
+					<ul class="wrapper-footer-text">
+						<li class="text-footer"><a href="#">เป้าหมาย</a></li>
+						<li class="text-footer"><a href="#">หาบ้านให้แมว</a></li>
+						<li class="text-footer"><a href="#">ผู้บริจาคล่าสุด</a></li>
+					</ul>	
+					<ul class="wrapper-footer-text">
+						<li class="text-footer"><a href="#">สถิติการบริจาค</a></li>
+						<li class="text-footer"><a href="#">ติดต่อเรา</a></li>
+						<li class="text-footer"><a href="content.html">ดูบอร์ดทั้งหมด</a></li>
+					</ul>
+				</div>
+
+				<div class="wrapper-icon-footer">
+					<a href="#" class="icon-footer">
+					<i class="fa fa-facebook-square"></i></a>
+					<a href="#" class="icon-footer">
+					<i class="fa fa-google-plus-square"></i></a>
+					<a href="#" class="icon-footer">
+					<i class="fa fa-youtube-play"></i></a>
+					<a href="#" class="icon-footer">
+					<i class="fa fa-instagram"></i></a>
+				</div>
+
+				<div class="wrapper-input-footer">
+					<input type="text" class="input-email-footer" placeholder="E-mail" />
+					<div class="button-email-footer">
+						<a href="#" class="icon-email-footer">
+						<i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>		
+
+				<div class="bg-credit-footer">
+					<div class="text-credit-footer">
+						Copyright 2016   |   ma-rsa.com   |   All right Resered
+					</div>
+				</div>
+			</div><!-- end footer -->
+
+		</div><!-- end wrapper -->
+	</body>
+</html>
+
+<script>
+	//video-header
+	var vid = document.getElementById("bgvid");
+	function vidFade() {
+	  vid.classList.add("stopfade");
+	}
+	vid.addEventListener('ended', function()
+	{
+	// only functional if "loop" is removed 
+	vid.pause();
+	// to capture IE10
+	vidFade();
+	}); 
+	//end video-header
+</script>
